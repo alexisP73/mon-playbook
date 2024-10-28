@@ -1,0 +1,8 @@
+---
+- name: mon 1er playbook
+  connection: ssh
+  hosts: mes_machines
+  remote_user: pretti
+  tasks:
+    - name: ping
+      ansible.builtin.ping:
